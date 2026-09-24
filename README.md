@@ -32,15 +32,27 @@ The microcontroller continuously reads the current temperature and compares it w
 
 The NeoPixel ring changes color depending on the temperature condition:
 
-- 🔵 **Blue** — measured temperature is below the target range
-- 🟢 **Green** — measured temperature is within the desired range
-- 🔴 **Red** — measured temperature is above the target range
+-  **Blue** — measured temperature is below the target range
+-  **Green** — measured temperature is within the desired range
+-  **Red** — measured temperature is above the target range
 
 This provides a quick visual indication of the current temperature condition.
 
+### Prototype Operation
+
+The LCD displays both the measured temperature and the user-selected target temperature, along with the resulting temperature status.
+
+#### Comfortable State
+
+![LCD displaying comfortable temperature status](IMG_0272.jpg)
+
+#### Above Target Temperature
+
+![LCD displaying too-hot temperature status](IMG_0273.jpg)
+
 ## Hardware
 
-- STM32 microcontroller
+- STM32 NUCLEO-G431RB development board
 - ADT7420 digital temperature sensor
 - 16×2 LCD display
 - Rotary encoder
@@ -77,6 +89,10 @@ The NeoPixel ring provides visual temperature feedback.
 Because NeoPixels require accurately timed digital pulses, the STM32 uses timer-based PWM with DMA to generate the required LED data waveform.
 
 RGB values are converted into the timing sequence required by the LEDs and transferred using DMA.
+
+#### NeoPixel Status Indication
+
+![NeoPixel ring displaying temperature status](IMG_9973.jpg)
 
 ## Software
 
