@@ -44,11 +44,11 @@ The LCD displays both the measured temperature and the user-selected target temp
 
 #### Comfortable State
 
-![LCD displaying comfortable temperature status](IMG_0272.jpg)
+![LCD displaying comfortable temperature status](IMG_0272.jpeg)
 
 #### Above Target Temperature
 
-![LCD displaying too-hot temperature status](IMG_0273.jpg)
+![LCD displaying too-hot temperature status](IMG_0273.jpeg)
 
 ## Hardware
 
@@ -92,7 +92,7 @@ RGB values are converted into the timing sequence required by the LEDs and trans
 
 #### NeoPixel Status Indication
 
-![NeoPixel ring displaying temperature status](IMG_9973.jpg)
+![NeoPixel ring displaying temperature status](IMG_9973.jpeg)
 
 ## Software
 
